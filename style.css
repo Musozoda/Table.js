@@ -1,0 +1,172 @@
+
+body {
+    background-color: gray;
+    background-image: url(https://www.wallpapertip.com/wmimgs/83-838362_web-developer.jpg);
+    background-size: 100%;
+    padding: 50px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.table {
+    margin: auto;
+background-color: #333333;
+    color: white;
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px;
+    border-spacing: 5px;
+  }
+  .table:hover {
+    box-shadow: 0px 0px 20px 5px white;
+    transition: 1s;
+}
+
+th {
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 5px;
+}
+
+td {
+  border-bottom: 1px solid rgb(94, 93, 93);
+}
+.table th {
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 3px;
+    
+}
+
+
+
+.table td {
+    text-align: center;
+    margin: 5px;
+}
+
+
+caption{
+    text-transform: uppercase;
+    width:  70%;
+    background-color: rgb(28, 28, 28);
+    margin: 20px auto;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 900;
+
+}
+
+caption:hover {
+  background-color: aliceblue;
+  color: gray;
+  box-shadow: 0px 0px 20px 5px white;
+  transition: 1s;
+}
+
+
+i:hover {
+  color: black;
+  transition: 1s;
+}
+
+.modal,.modalAdd,.modalEdit,.modalRead {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  
+}
+
+/* Modal Content/Box */
+.modal-content,.modalAdd-content,.modalEdit-content,.modalRead-content {
+  background-color: gray;
+  border-radius: 10px;
+  margin: 15% auto; /* 15% from the top and centered */
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  box-shadow: 0px 0px 20px 5px white;
+
+}
+
+.modal-content p,.modalAdd-content p,.modalEdit-content p,.modalRead-content p {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.modal-content input,.modalAdd-content input,.modalEdit-content input,.modalRead-content input {
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  background-color: lightgray;
+  color: black;
+}
+
+.modal-content button,.modalAdd-content button,.modalEdit-content button,.modalRead-content button {
+  padding:  5px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: lightgray;
+}
+
+.modal-content button:hover,.modalAdd-content button:hover,.modalEdit-content button:hover,.modalRead-content button:hover{
+  background-color: white;
+  transition: 1s;
+  box-shadow: 0px 0px 10px 0px black;
+  color: gray;
+  text-shadow: 0px 0px 10px 10px lightgray;
+}
+.bordernone {
+  border: none;
+}
+
+
+.action{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  justify-content: center;
+  border: none;
+}
+
+/* The Close Button */
+.close,.closeAdd,.closeEdit,.closeRead {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+}
+
+.close:hover,
+.close:focus,
+.closeAdd:hover,
+.closeAdd:focus,
+.closeEdit:hover,
+.closeEdit:focus,
+.closeRead:hover,
+.closeRead:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 2s;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+

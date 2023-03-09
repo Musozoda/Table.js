@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+
+    <table class="table">
+        <thead>
+            <caption class="add">add user</caption>
+            <tr>
+                <th class="id">id</th>
+                <th class="name">name</th>
+                <th class="age">age</th>
+                <th class="phone">phone</th>
+                <th class="course">course</th>
+                <th class="course">action</th>
+                </tr> 
+        </thead>
+        <tbody class="tbody">
+            <tr class="tr">
+                <td class="action">
+                <i class="actionDelete"></i>
+                <i class="actionRead"></i>
+                <i class="actionEdit"></i>
+                </td>
+            </tr>
+        </tbody>
+        
+        
+       
+    </table>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Do you want to delete?</p>
+    <button class="yesDelete">Yes</button>
+    <button class="noDelete">No</button>
+
+  </div>
+
+</div>
+
+<div id="myModalRead" class="modalRead">
+
+    <!-- Modal content -->
+    <div class="modalRead-content">
+      <span class="closeRead">&times;</span>
+      <p>Info about User</p>
+      <div class="div">
+        <div class="divReadElem"></div>
+      </div>
+    </div>
+  
+  </div>
+
+<!-- The Modal -->
+<div id="myModalAdd" class="modalAdd">
+
+    <!-- Modal content -->
+    <div class="modalAdd-content">
+      <span class="closeAdd">&times;</span>
+      <p>Do you want to add?</p>
+        <form class="formAdd">
+            <label for="name">
+                <input type="text" name="name" id="" placeholder="name">
+            </label><label for="age">
+                <input type="text" name="age" id="" placeholder="age">
+            </label><label for="phone">
+                <input type="text" name="phone" id="" placeholder="phone">
+            </label><label for="course">
+                <input type="text" name="course" id="" placeholder="course">
+            </label>
+            <input type="submit" name="" id="">
+        </form>
+    </div>
+  
+  </div>
+
+  <div id="myModalEdit" class="modalEdit">
+
+    <!-- Modal content -->
+    <div class="modalEdit-content">
+      <span class="closeEdit">&times;</span>
+      <p>Do you want to edit?</p>
+        <form class="formEdit">
+            <label for="name">
+                <input type="text" name="name" id="" placeholder="name">
+            </label><label for="age">
+                <input type="text" name="age" id="" placeholder="age">
+            </label><label for="phone">
+                <input type="text" name="phone" id="" placeholder="phone">
+            </label><label for="course">
+                <input type="text" name="course" id="" placeholder="course">
+            </label>
+            <input type="submit" name="" id="">
+        </form>
+    </div>
+  
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
